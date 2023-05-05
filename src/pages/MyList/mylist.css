@@ -1,0 +1,72 @@
+.title-mylist {
+    margin: 7vh 0;
+}
+
+.message-list {
+    font-size: 1.5rem;
+    margin-top: 4vh;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 5vh 4vw;
+}
+
+.movie-title-list {
+    font-size: 1.7rem;
+    max-width: 65%;
+}
+
+.movie-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    padding-right: 55px;
+    border-radius: 12px;
+    background-color: rgb(42, 39, 39);
+    width: 85vw;
+}
+
+.img-movie {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.details-list {
+    background-color: #791717;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+@media (max-width: 780px){
+    .infos,
+    .movie-li {
+        flex-direction: column;
+        padding: 0 0 26px 0;
+    }
+
+    .img-movie {
+        width: 100%;
+    }
+
+    .movie-title-list {
+        margin-top: 3vh;
+    }
+
+    .options {
+        gap: 15vw;
+    }
+}

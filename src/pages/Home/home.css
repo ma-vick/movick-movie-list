@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-home {
+    margin-top: 8vh;
+    font-size: 2.5rem;
+}
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1315px;
+    padding: 0 80px;
+    margin: 8vh 0 12vh;
+}
+
+.movie {
+    max-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -400px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #252525 25%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.movie:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.movie:hover .poster img {
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.movie:hover .details {
+    display: block;
+    bottom: 40px;
+}
+
+.details h2 {
+    max-width: 180px;
+    margin-bottom: 2vh;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
