@@ -50,7 +50,7 @@ function MoviePage(){
           <span className="movie-rate">{(Math.round(movie.vote_average * 100) / 100).toFixed(1)} / 10</span>
           <p className="sinopse">{movie.overview}</p>
           <div className="container-btns">
-            <a href={`https://youtube.com/results?search_query=${movie.title}`} target='blank'><button className='button-trailer'>Assista ao trailer</button></a>
+            <a className='container-link-btn' href={`https://youtube.com/results?search_query=${movie.title}`} target='blank'><button className='button-trailer'>Assista ao trailer</button></a>
             <button onClick={saveMovie} className="save-movie">Salvar</button>
           </div>
         </div>

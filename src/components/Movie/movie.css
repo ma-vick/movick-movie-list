@@ -31,10 +31,14 @@
     margin-top: 2vh;
 }
 
+.container-btns {
+    display: flex;
+    gap: 7vw;
+    margin-top: 4vh;
+}
+
 .button-trailer {
     cursor: pointer;
-    margin-top: 4vh;
-    width: 25%;
     background-color: #950101;
     border: none;
     border-radius: 8px;
@@ -52,7 +56,6 @@
 
 .save-movie {
     cursor: pointer;
-    margin: 4vh 2vw;
     width: 25%;
     background-color: #d7d7d7;
     border: none;
@@ -82,9 +85,14 @@
     }
 
     .container-btns {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2vh;
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 5vh;
+    }
+
+    .container-link-btn,
+    .save-movie {
+        width: 100%;
     }
 
     .button-trailer {

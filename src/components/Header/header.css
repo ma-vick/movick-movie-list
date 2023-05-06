@@ -14,6 +14,14 @@ nav {
     width: 100%;
 }
 
+.nav-items {
+     display: flex;
+}
+
+.sidebar-nav-list {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     gap: 35vw;
@@ -74,33 +82,45 @@ nav a:hover {
         overflow-x: hidden;
     }
 
-    .nav-list {
+    .nav-list,
+    .nav-items ul {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .sidebar-nav-list {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         gap: 28vh;
         position: absolute;
-        top: 8vh;
+        top: 0;
         right: 0;
         width: 45vw;
         height: 100vh;
         background-color: black;
         z-index: 1;
-        padding-top: 8vh;
         border-bottom-left-radius: 12px;
-        transform: translateX(100%);
     }
 
-    .nav-list.active {
-        transform: translateX(0);
+    .sidebar-close-btn {
+        align-self: flex-end;
+        margin: 2vh 4vw 0;
     }
 
-    .principal-nav {
+    .sidebar-principal-nav {
+        display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 10vh;
     }
 
-    .mobile-menu-icon {
-        display: block;
+    .sidebar-social-medias {
+        display: flex;
+        gap: 5vw;
     }
 }
