@@ -77,6 +77,10 @@ nav a:hover {
     cursor: pointer;
 }
 
+.blur {
+    filter: blur(0.2rem);
+}
+
 @media (max-width: 780px){
     body {
         overflow-x: hidden;

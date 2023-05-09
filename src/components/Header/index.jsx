@@ -9,6 +9,9 @@ import { useState } from "react";
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  const main = document.querySelector('main');
+
+  sidebar ? main.classList.add('blur') : main.classList.remove('blur');
 
   return (
     <header>
