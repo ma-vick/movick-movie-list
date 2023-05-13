@@ -40,10 +40,10 @@ const Header = () => {
                   <AiOutlineClose size={26} onClick={showSidebar} className="sidebar-close-btn" /> 
                   <ul className="sidebar-principal-nav">
                       <li>
-                        <Link to="/">Filmes</Link>
+                        <Link to="/" onClick={() => {setSidebar(false)}}>Filmes</Link>
                       </li>
                       <li>
-                        <Link to="/mylist">Minha lista</Link>
+                        <Link to="/mylist" onClick={() => {setSidebar(false)}}>Minha lista</Link>
                       </li>
                   </ul>
                   <ul className="sidebar-social-medias">
